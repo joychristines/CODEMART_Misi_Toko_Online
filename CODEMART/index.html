@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="CODEMART — media pembelajaran interaktif Ekspresi dalam Pemrograman untuk Informatika Kelas X Fase E.">
+<title>CODEMART — Misi Toko Online</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app-shell">
+<aside class="sidebar" id="sidebar">
+ <div class="brand"><div class="brand-mark">C<span>+</span></div><div><strong>CODEMART</strong><small>Misi Toko Online</small></div></div>
+ <div class="course-pill">INFORMATIKA <b>KELAS X · FASE E</b></div>
+ <nav id="nav" aria-label="Navigasi utama">
+  <button class="nav-item active" data-page="dashboard"><span>▦</span> Dashboard</button>
+  <button class="nav-item" data-page="guide"><span>☷</span> Petunjuk Belajar</button>
+  <button class="nav-item" data-page="mission"><span>🛍</span> Misi Kasus <em>A</em></button>
+  <button class="nav-item" data-page="module1"><span>⌘</span> Modul 1 · Penugasan <em>B</em></button>
+  <button class="nav-item" data-page="module2"><span>∑</span> Modul 2 · Aritmatika <em>C</em></button>
+  <button class="nav-item" data-page="module3"><span>⇄</span> Modul 3 · Relasional <em>D</em></button>
+  <button class="nav-item" data-page="module4"><span>▣</span> Modul 4 · Studio Kasus <em>E</em></button>
+  <button class="nav-item" data-page="summary"><span>▤</span> Ringkasan Materi <em>F</em></button>
+  <button class="nav-item" data-page="practice"><span>✎</span> Latihan Mandiri</button>
+  <button class="nav-item" data-page="results"><span>◔</span> Hasil Belajar</button>
+  <button class="nav-item" data-page="presentation"><span>▣</span> Presentasi Solusi</button>
+  <button class="nav-item" data-page="exit"><span>✓</span> Exit Ticket</button>
+ </nav>
+ <div class="sidebar-bottom"><div class="offline-note"><span class="live-dot"></span> Bisa digunakan offline<br><small>Progres tersimpan di perangkat ini</small></div><button class="text-button" id="teacherToggle">⚙ Mode Guru & Presentasi</button></div>
+</aside>
+<main class="main-area">
+ <header class="topbar"><button class="icon-button mobile-menu" id="mobileMenu" aria-label="Buka navigasi">☰</button><div class="crumb"><span>Ruang Belajar</span><b>/</b><strong id="crumbTitle">Dashboard</strong></div><div class="top-actions"><span class="lesson-chip">● PBL · 5 FASE</span><button class="icon-button" id="presentationBtn" title="Mode presentasi">⛶</button></div></header>
+ <div class="page-wrap" id="pageContent" tabindex="-1"></div>
+ <footer class="footer"><span>CODEMART · Media pendukung LKPD revisi</span><span>Belajar → Prediksi → Uji → Catat di LKPD</span></footer>
+</main>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="modal-backdrop" id="modalBackdrop" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="Tutup">×</button><h2 id="modalTitle">Mode Guru</h2><div id="modalBody"></div></section></div>
+<script src="app.js"></script>
+</body></html>
